@@ -50,6 +50,7 @@
         /* Cambiar a columna en dispositivos móviles */
         max-height: none;
         /* Restaurar la altura predeterminada */
+        height: 70vh;
     }}
 
     .item {

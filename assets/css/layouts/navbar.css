@@ -1,0 +1,104 @@
+/* Estilos para la barra de navegación */
+.navbar {
+    position: fixed;
+    width: 100%;
+    background-color: transparent;
+    color: white;
+    z-index: 1000;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+ /* Fondo negro del navbar al hacer scroll */
+.navbar.scroll {
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+/* Estilos para los enlaces de navegación */
+.nav-links a {
+    display: inline-block;
+    transition: transform 0.3s ease;
+    text-decoration: none;
+    color: white;
+}
+
+.nav-links li:hover a {
+    transform: translateY(-7px); /* Desplazamiento hacia arriba al pasar el mouse */
+}
+
+/* Ícono del menú */
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px 0;
+    transition: 0.3s;
+}
+
+/* Lista de enlaces de navegación */
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+/* Dispositivos móviles */
+@media screen and (max-width: 900px) {
+    .navbar {
+        justify-content: initial;
+    }
+
+    .nav-links li {
+        padding: 10px;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        font-size: 1.2rem;
+        flex-direction: column;
+        background: linear-gradient(45deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+        width: 100%;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        opacity: 0;
+        transform: translateY(-10px);
+        transition: opacity 0.3s, transform 0.3s;
+        z-index: 1;
+    }
+    /* Animación x */
+    .menu-toggle.active + .nav-links {
+        display: flex;
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    .menu-toggle.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .menu-toggle.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .menu-toggle.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+}

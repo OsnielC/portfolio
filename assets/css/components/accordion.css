@@ -1,0 +1,41 @@
+/* Estilos para la galería */
+.gallery-wrap {
+    display: flex;
+    flex-direction: row; /* Organizar los elementos en fila */
+    width: 100%; /* Ancho completo */
+    height: 70vh; /* Altura del 70% del viewport */
+}
+
+/* Estilos para cada ítem de la galería */
+.item {
+    flex: 1;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: none;
+    transition: flex 0.8s ease;
+
+    &:hover {
+        flex: 7; /* Expandir el ítem al hacer hover */
+    }
+}
+
+.item-1 {
+    background-image: url('../../img/osniel1.jpg');
+}
+
+.item-2 {
+    background-image: url('../../img/osniel2.jpg');
+}
+
+.item-3 {
+    background-image: url('../../img/osniel3.jpg');
+}
+
+.item-4 {
+    background-image: url('../../img/osniel4.jpg');
+}
+
+.item-5 {
+    background-image: url('../../img/osniel5.jpg');
+}

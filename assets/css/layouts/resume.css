@@ -1,0 +1,55 @@
+.resume_section {
+    margin: 0 10%;
+    padding: 5% 0;
+}
+
+.container_resume {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    /* Crea dos columnas de igual tamaño */
+    gap: 20px;
+    /* Espacio entre las columnas */
+}
+
+.column {
+    padding: 20px;
+    border: 1px solid #ddd;
+    box-shadow: 0 70px 63px -60px #000000;
+    border-radius: 30px;
+}
+
+.resume-item h4 {
+    font-weight: normal;
+}
+
+.resume-title {
+    text-transform: uppercase;
+}
+
+.resume-item p {
+    font-weight: lighter;
+}
+
+.resume-item a {
+    text-decoration: none;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+
+/* Media query para ajustar el diseño en pantallas más pequeñas */
+@media (max-width: 950px) {
+    .container_resume {
+        grid-template-columns: 1fr;
+        /* Cambia a una columna en pantallas pequeñas */
+    }
+}

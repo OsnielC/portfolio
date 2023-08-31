@@ -1,0 +1,61 @@
+/* Contenedor de la cuadrícula */
+.grid-container {
+    margin: 0 10%; /* Márgenes laterales del 10% */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Columnas adaptables */
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Sección de certificados */
+.certificates-section {
+    padding: 15px 0;
+    text-align: center;
+    background-image: url('../../img/code.png');
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.certificates-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: white;
+    letter-spacing: 0.1em;
+    /* Efecto de texto con sombra bicolor */
+    text-shadow: -0.09em 0 0 #F22613, 0.09em 0 0 #00FFFF;
+}
+
+/* Ítems en la cuadrícula */
+.grid-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffff;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+/* Efecto zoom */
+.grid-item:hover {
+    transform: scale(1.1); /* Efecto de escala al pasar el mouse */
+}
+
+.grid-item img {
+    max-width: 50%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.grid-item a {
+    text-decoration: none;
+}
+
+/* Pantallas pequeñas */
+@media screen and (max-width: 450px) {
+    .certificates-section h2 {
+        font-size: 1.5rem; /* Reducción del tamaño del encabezado */
+    }
+}

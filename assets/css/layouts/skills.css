@@ -1,0 +1,63 @@
+/* Estilos para la sección de habilidades */
+#skills {
+    text-align: center;
+    padding: 50px;
+    /* Fondo con gradiente animado */
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite; /* Animación de gradiente */
+}
+
+/* Estilos para el título de habilidades */
+#skills h2 {
+    color: white;
+    font-size: 2.2rem;
+    letter-spacing: 0.1em;
+}
+
+/* Animación de gradiente */
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Estilos para la lista de habilidades */
+#skills ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+}
+
+/* Estilos para cada ítem de habilidad */
+#skills li {
+    background-color: black;
+    color: white;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 15px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+/* Efecto al pasar el mouse por encima de un ítem */
+#skills li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Punto antes de cada ítem de habilidad */
+#skills li:before {
+    content: "\2022"; /* Punto Unicode */
+    margin-right: 10px;
+    color: #ff5e3a; /* Color del punto */
+    font-weight: bold;
+}

@@ -1,0 +1,62 @@
+/* Estilos para la sección hero */
+.hero {
+    /* Configuración del fondo */
+    background-image: url('../../img/hero-background.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+
+    /* Flexbox para centrar el contenido */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* Estilos del texto */
+    color: white;
+    text-align: center;
+    height: 100vh; /* Altura completa del viewport */
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+/* Clases de animación para mostrar/ocultar texto */
+.hidden-text {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.show-text {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Pantallas medianas */
+@media screen and (max-width: 1000px) {
+    .hero {
+        background-position: center; /* Ajustar posición del fondo */
+    }
+}
+
+/* Simula un cursor de escritura */
+.writing {
+    border-right: 0.08em solid white;
+    animation: blink-caret 0.75s step-end infinite;
+}
+
+/* Keyframes para la animación del cursor */
+@keyframes blink-caret {
+    from, to {
+        border-color: transparent;
+    }
+    50% {
+        border-color: white;
+    }
+}

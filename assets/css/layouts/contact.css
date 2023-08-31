@@ -1,0 +1,100 @@
+/* Sección de contacto */
+.contact {
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 3rem 0;
+}
+
+/* Formulario */
+div.form {
+    max-width: 450px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 2px solid #fff;
+}
+
+/* Campos de entrada */
+.input-field {
+    position: relative;
+}
+
+.input-field i {
+    font-size: 25px;
+    width: 25px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 10px;
+}
+
+input,
+textarea {
+    color: white;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #fff;
+    height: 3rem;
+    margin: 0 0 15px 0;
+    transition: border-color .3s;
+    width: 80%;
+    padding-top: 20px;
+    font-size: 16px;
+}
+
+textarea {
+    padding-top: 3rem;
+}
+
+input:focus,
+textarea:focus {
+    border-color: transparent;
+    outline: none;
+}
+
+label {
+    position: absolute;
+    top: 0.7rem;
+    left: 1.3rem;
+    cursor: text;
+    margin-left: 2rem;
+}
+
+/* Estilos para el botón */
+.btn-block {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.btn-block .btn {
+    text-decoration: none;
+    color: #fff;
+    background-color: #0062d3;
+    transition: background-color .2s ease-out;
+    cursor: pointer;
+    border: none;
+    padding: 10px 35px;
+    font-size: 19px;
+    margin: 1em 0;
+}
+
+/* Pantallas pequeñas */
+@media (max-width: 530px) {
+    div.form {
+        width: 70%;
+        padding: 20px 10px;
+    }
+
+    input,
+    textarea {
+        width: 73%;
+    }
+
+    .input-field i {
+        margin-right: 0.6rem;
+    }
+
+    label {
+        left: 0.7rem;
+    }
+}

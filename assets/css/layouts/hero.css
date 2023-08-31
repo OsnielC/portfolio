@@ -38,12 +38,7 @@
     transform: translateY(0);
 }
 
-/* Pantallas medianas */
-@media screen and (max-width: 1000px) {
-    .hero {
-        background-position: center; /* Ajustar posición del fondo */
-    }
-}
+
 
 /* Simula un cursor de escritura */
 .writing {

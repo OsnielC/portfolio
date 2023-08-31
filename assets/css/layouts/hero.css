@@ -2,13 +2,13 @@
 .hero {
     /* Configuración del fondo */
     background-image: url('../../img/hero-background.jpg');
+    background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-
+    background-position: center center;
     height: 100vh;
     position: relative;
-    color: #fff;
-    
+
     /* Flexbox para centrar el contenido */
     display: flex;
     justify-content: center;
@@ -17,7 +17,7 @@
     /* Estilos del texto */
     color: white;
     text-align: center;
-    height: 100vh; /* Altura completa del viewport */
+    /* Altura completa del viewport */
 }
 
 .hero h1 {
@@ -42,13 +42,6 @@
     transform: translateY(0);
 }
 
-/* Pantallas medianas */
-@media screen and (max-width: 1000px) {
-    .hero {
-        background-position: center; /* Ajustar posición del fondo */
-    }
-}
-
 /* Simula un cursor de escritura */
 .writing {
     border-right: 0.08em solid white;
@@ -57,9 +50,12 @@
 
 /* Keyframes para la animación del cursor */
 @keyframes blink-caret {
-    from, to {
+
+    from,
+    to {
         border-color: transparent;
     }
+
     50% {
         border-color: white;
     }

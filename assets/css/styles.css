@@ -10,6 +10,9 @@ body {
 }
 
 /* Cambiar color y subrayado al pasar el mouse por un enlace */
+a{
+    color: black;
+}
 a:hover {
     color: #0078ff; /* Cambiar el color al azul */
     text-decoration: none; /* Eliminar subrayado */

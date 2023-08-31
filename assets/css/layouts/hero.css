@@ -20,6 +20,12 @@
     /* Altura completa del viewport */
 }
 
+@media (max-width: 1024px) {
+    .hero {
+        background-attachment: fixed;
+    }
+}
+
 .hero h1 {
     font-size: 3rem;
     margin-bottom: 20px;

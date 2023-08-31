@@ -1,6 +1,7 @@
 # Portafolio de Desarrollador Web
 
 ¡Bienvenido a mi portafolio de desarrollador web!
+Mi portafolio está hecho utilizando solo HTML, CSS y JavaScript.
 
 ## Acerca de Mí
 

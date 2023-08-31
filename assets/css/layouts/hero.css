@@ -5,6 +5,10 @@
     background-attachment: fixed;
     background-size: cover;
 
+    height: 100vh;
+    position: relative;
+    color: #fff;
+    
     /* Flexbox para centrar el contenido */
     display: flex;
     justify-content: center;
@@ -38,7 +42,12 @@
     transform: translateY(0);
 }
 
-
+/* Pantallas medianas */
+@media screen and (max-width: 1000px) {
+    .hero {
+        background-position: center; /* Ajustar posición del fondo */
+    }
+}
 
 /* Simula un cursor de escritura */
 .writing {

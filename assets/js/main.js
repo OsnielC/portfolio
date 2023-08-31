@@ -2,7 +2,7 @@
 document.addEventListener("DOMContentLoaded", () => {
     // Selecciona el elemento de la barra de navegación
     const navbar = document.querySelector('.navbar');
-    // Btón de menú móvil y los enlaces de navegación
+    // Botón de menú móvil y los enlaces de navegación
     const mobileMenuToggle = document.getElementById("mobile-menu");
     const navLinks = document.getElementById("navLinks");
     // Texto oculto
@@ -52,4 +52,27 @@ document.addEventListener("DOMContentLoaded", () => {
             navbar.classList.remove('scroll');
         }
     });
+
+    function toggleItem(item) {
+        if (window.innerWidth <= 768) { // Dispositivo móvil
+            item.classList.toggle('expanded');
+        }
+    }
+
+    // Obtén todos los elementos con la clase 'item'
+    const galleryItems = document.querySelectorAll('.item');
+
+    // Agrega el evento de clic y el evento de paso del cursor (mouseover)
+    galleryItems.forEach(item => {
+        item.addEventListener('click', function () {
+            toggleItem(this);
+        });
+        item.addEventListener('mouseover', function () {
+            toggleItem(this);
+        });
+        item.addEventListener('mouseout', function () {
+            toggleItem(this);
+        });
+    });
+
 });

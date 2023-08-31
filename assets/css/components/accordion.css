@@ -2,11 +2,9 @@
 .gallery-wrap {
     display: flex;
     flex-direction: row;
-    /* Organizar los elementos en fila */
     width: 100%;
-    /* Ancho completo */
+     /* Altura del 70% del viewport */
     height: 50vh;
-    /* Altura del 70% del viewport */
 }
 
 /* Estilos para cada ítem de la galería */

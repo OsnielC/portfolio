@@ -1,8 +1,10 @@
 /* Contenedor de la cuadrícula */
 .grid-container {
-    margin: 0 10%; /* Márgenes laterales del 10% */
+    margin: 0 10%;
+    /* Márgenes laterales del 10% */
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Columnas adaptables */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    /* Columnas adaptables */
     gap: 20px;
     padding: 20px;
 }
@@ -40,7 +42,8 @@
 
 /* Efecto zoom */
 .grid-item:hover {
-    transform: scale(1.1); /* Efecto de escala al pasar el mouse */
+    transform: scale(1.1);
+    /* Efecto de escala al pasar el mouse */
 }
 
 .grid-item img {
@@ -56,6 +59,7 @@
 /* Pantallas pequeñas */
 @media screen and (max-width: 450px) {
     .certificates-section h2 {
-        font-size: 1.5rem; /* Reducción del tamaño del encabezado */
+        font-size: 1.5rem;
+        /* Reducción del tamaño del encabezado */
     }
 }

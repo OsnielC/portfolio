@@ -12,7 +12,7 @@
     transition: background-color 0.3s ease;
 }
 
- /* Fondo negro del navbar al hacer scroll */
+/* Fondo negro del navbar al hacer scroll */
 .navbar.scroll {
     background-color: rgba(0, 0, 0, 0.9);
 }
@@ -26,7 +26,8 @@
 }
 
 .nav-links li:hover a {
-    transform: translateY(-7px); /* Desplazamiento hacia arriba al pasar el mouse */
+    transform: translateY(-7px);
+    /* Desplazamiento hacia arriba al pasar el mouse */
 }
 
 /* Ícono del menú */
@@ -83,8 +84,9 @@
         transition: opacity 0.3s, transform 0.3s;
         z-index: 1;
     }
+
     /* Animación x */
-    .menu-toggle.active + .nav-links {
+    .menu-toggle.active+.nav-links {
         display: flex;
         opacity: 1;
         transform: translateY(0);

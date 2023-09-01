@@ -5,23 +5,30 @@
 
 body {
     margin: 0;
-    font-family: 'Poppins', sans-serif; /* Usar la fuente Poppins */
-    background-color: #f5f5f5; /* Color de fondo */
+    font-family: 'Poppins', sans-serif;
+    /* Usar la fuente Poppins */
+    background-color: #f5f5f5;
+    /* Color de fondo */
 }
 
 /* Cambiar color y subrayado al pasar el mouse por un enlace */
-a{
+a {
     color: black;
 }
+
 a:hover {
-    color: #0078ff; /* Cambiar el color al azul */
-    text-decoration: none; /* Eliminar subrayado */
-    transition: all 0.5s ease-in-out; /* Animación suave */
+    color: #0078ff;
+    /* Cambiar el color al azul */
+    text-decoration: none;
+    /* Eliminar subrayado */
+    transition: all 0.5s ease-in-out;
+    /* Animación suave */
 }
 
 /* Cambiar el color de enlaces visitados */
 a:visited {
-    color: initial; /* Mantener el color original */
+    color: initial;
+    /* Mantener el color original */
 }
 
 /* Estilos para el pie de página */
@@ -32,8 +39,8 @@ footer {
     background: #0062d3;
 }
 
-@media (min-width: 2000px){
-    body{
+@media (min-width: 2000px) {
+    body {
         font-size: 2rem;
     }
 }

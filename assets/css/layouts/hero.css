@@ -19,6 +19,7 @@
     text-align: center;
     /* Altura completa del viewport */
 }
+
 /* Dispositivos moviles */
 @media (max-width: 1024px) {
     .hero {

@@ -31,3 +31,9 @@ footer {
     padding: 15px 0;
     background: #0062d3;
 }
+
+@media (min-width: 2000px){
+    body{
+        font-size: 2rem;
+    }
+}
